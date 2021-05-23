@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Tactical Math Returns
+Icon=com.DaRealRoyal.TacticalMathReturns.png
+Exec=tacticalmathreturns %U
+Categories=Game;

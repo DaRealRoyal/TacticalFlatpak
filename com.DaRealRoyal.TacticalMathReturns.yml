@@ -1,0 +1,39 @@
+app-id: com.DaRealRoyal.TacticalMathReturns
+runtime: org.freedesktop.Platform
+runtime-version: '20.08'
+sdk: org.freedesktop.Sdk
+command: tacticalmathreturns
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --socket=wayland
+  - --socket=pulseaudio
+  - --share=network
+  - --device=dri
+modules:
+  - name: TMR-Files
+    buildsystem: simple
+    build-commands:
+      - cp -R . /app/game
+    sources:
+      - type: archive
+        url: https://github.com/DaRealRoyal/TacticalMathReturns/releases/download/v0.5/TacticalMathReturns.tar.xz
+        sha256: 0bb530d7e146a147dc05dbddd5d722941f2cd720a7f5c2dc24fb3e0b003a5bd4
+  - name: TMR-Shortcut
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 launch.sh /app/bin/tacticalmathreturns
+      - install -Dm644 com.DaRealRoyal.TacticalMathReturns.appdata.xml /app/share/appdata/com.DaRealRoyal.TacticalMathReturns.appdata.xml
+      - install -Dm644 com.DaRealRoyal.TacticalMathReturns.desktop /app/share/applications/com.DaRealRoyal.TacticalMathReturns.desktop
+      - install -Dm644 icon512x512.png /app/share/icons/hicolor/512x512/apps/com.DaRealRoyal.TacticalMathReturns.png
+    sources:
+      - type: script
+        dest-filename: launch.sh
+        commands:
+          - /app/game/TacticalMathReturns.x86_64
+      - type: file
+        path: com.DaRealRoyal.TacticalMathReturns.appdata.xml
+      - type: file
+        path: com.DaRealRoyal.TacticalMathReturns.desktop
+      - type: file
+        path: icon512x512.png

@@ -3,6 +3,7 @@ runtime: org.freedesktop.Platform
 runtime-version: '20.08'
 sdk: org.freedesktop.Sdk
 command: tacticalmathreturns
+branch: stable
 finish-args:
   - --share=ipc
   - --socket=x11
@@ -18,14 +19,14 @@ modules:
     sources:
       - type: archive
         url: https://github.com/DaRealRoyal/TacticalMathReturns/releases/download/v0.5/TacticalMathReturns.tar.xz
-        sha256: 0bb530d7e146a147dc05dbddd5d722941f2cd720a7f5c2dc24fb3e0b003a5bd4
+        sha256: d8ae191fb0524e368edc7f9bc49adb74bf51212fa8c8d8958d4cdf67f0d399de
   - name: TMR-Shortcut
     buildsystem: simple
     build-commands:
       - install -Dm755 launch.sh /app/bin/tacticalmathreturns
       - install -Dm644 com.DaRealRoyal.TacticalMathReturns.appdata.xml /app/share/appdata/com.DaRealRoyal.TacticalMathReturns.appdata.xml
       - install -Dm644 com.DaRealRoyal.TacticalMathReturns.desktop /app/share/applications/com.DaRealRoyal.TacticalMathReturns.desktop
-      - install -Dm644 icon512x512.png /app/share/icons/hicolor/512x512/apps/com.DaRealRoyal.TacticalMathReturns.png
+      - install -Dm644 com.DaRealRoyal.TacticalMathReturns.png /app/share/icons/hicolor/512x512/apps/com.DaRealRoyal.TacticalMathReturns.png
     sources:
       - type: script
         dest-filename: launch.sh
@@ -36,4 +37,4 @@ modules:
       - type: file
         path: com.DaRealRoyal.TacticalMathReturns.desktop
       - type: file
-        path: icon512x512.png
+        path: com.DaRealRoyal.TacticalMathReturns.png

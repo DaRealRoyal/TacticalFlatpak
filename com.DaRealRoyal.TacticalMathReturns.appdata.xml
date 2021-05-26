@@ -34,6 +34,11 @@
 		</screenshot>
 	</screenshots>
 	<releases>
+		<release version="0.6" date="2021-05-26">
+			<description>
+				<p>Improvements, Updates and Bugfixes</p>
+			</description>
+		</release>
 		<release version="0.5" date="2021-05-23">
 			<description>
 				<p>First release as a Flatpak for Linux!</p>

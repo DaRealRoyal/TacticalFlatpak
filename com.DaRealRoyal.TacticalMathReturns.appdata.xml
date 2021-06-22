@@ -34,6 +34,11 @@
 		</screenshot>
 	</screenshots>
 	<releases>
+		<release version="0.9.1" date="2021-06-22">
+			<description>
+				<p>dXd1IChMb25lbHkgTGFiIHN0aW5rdCk=</p>
+			</description>
+		</release>
 		<release version="0.9" date="2021-06-18">
 			<description>
 				<p>Enter release notes here</p>

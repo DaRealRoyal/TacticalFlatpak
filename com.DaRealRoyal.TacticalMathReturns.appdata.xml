@@ -34,6 +34,11 @@
 		</screenshot>
 	</screenshots>
 	<releases>
+		<release version="1.0.1" date="2021-09-21">
+			<description>
+				<p>Just some small updates.</p>
+			</description>
+		</release>
 		<release version="1.0" date="2021-06-25">
 			<description>
 				<p>Hallo, bitte helfen Sie mir! Sie haben gesagt, das wären Release Notes, aber sie halten mich hier gefangen.</p>

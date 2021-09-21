@@ -18,8 +18,8 @@ modules:
       - cp -R . /app/game
     sources:
       - type: archive
-        url: https://github.com/DaRealRoyal/TacticalMathReturns/releases/download/v1.0/TacticalMathReturns.tar.xz
-        sha256: e2ee789f470f32188dc70c472fb1ddcc73374b71802873c147fa980a6a68e155
+        url: https://github.com/DaRealRoyal/TacticalMathReturns/releases/download/v1.0.1/TacticalMathReturns.tar.xz
+        sha256: 45dc6c32d5e5a75b0cf51ab1ceb68f4a0481a9de67b2ac50c2fbfe9cf2d754e5
   - name: TMR-Shortcut
     buildsystem: simple
     build-commands:

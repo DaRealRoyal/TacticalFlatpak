@@ -33,6 +33,11 @@
 			<image type="source">https://tacticalmath.games/images/screenshots/6.jpg</image>
 		</screenshot>
 	</screenshots>
+	<url type="homepage">https://tacticalmath.games/</url>
+	<url type="bugtracker">https://github.com/DaRealRoyal/TacticalMathReturns/issues</url>
+	<developer_name>Da Real Royal</developer_name>
+	<update_contact>contact@nalsai.de</update_contact>
+  	<content_rating type="oars-1.1" />
 	<releases>
 		<release version="1.0.1" date="2021-09-21">
 			<description>
@@ -75,8 +80,4 @@
 			</description>
 		</release>
 	</releases>
-	<url type="homepage">https://tacticalmath.games/</url>
-	<url type="bugtracker">https://github.com/DaRealRoyal/TacticalMathReturns/issues</url>
-	<developer_name>Da Real Royal</developer_name>
-	<update_contact>contact@nalsai.de</update_contact>
 </component>

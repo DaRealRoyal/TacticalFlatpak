@@ -4,7 +4,7 @@
 
 ## Installing
 
-I'm hosting this Tactical Math Returns Flatpak on my own Flatpak Repo. You can install it from there like this:
+I'm hosting this Flatpak on my own Flatpak Repo. You can install it from there like this:
 
 ```bash
 flatpak install https://flatpak.nils.moe/com.DaRealRoyal.TacticalMathReturns.flatpakref
@@ -12,16 +12,6 @@ flatpak install https://flatpak.nils.moe/com.DaRealRoyal.TacticalMathReturns.fla
 
 ## Building
 
-### Install SDK and Platform
-
 ```bash
-flatpak install flathub org.freedesktop.Sdk//21.08
-flatpak install flathub org.freedesktop.Platform//21.08
+flatpak-builder --install-deps-from=flathub --force-clean build-dir com.DaRealRoyal.TacticalMathReturns.yml
 ```
-
-### Build
-
-```bash
-flatpak-builder --force-clean build-dir com.DaRealRoyal.TacticalMathReturns.yml
-```
-

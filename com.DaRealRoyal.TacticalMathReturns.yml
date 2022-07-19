@@ -12,22 +12,23 @@ finish-args:
   - --share=network
   - --device=dri
 modules:
-  - name: TMR-Files
+  - name: tmr
     buildsystem: simple
     build-commands:
       - cp -R . /app/game
-    sources:
-      - type: archive
-        url: https://github.com/DaRealRoyal/TacticalMathReturns/releases/download/v1.0.1/TacticalMathReturns.tar.xz
-        sha256: 45dc6c32d5e5a75b0cf51ab1ceb68f4a0481a9de67b2ac50c2fbfe9cf2d754e5
-  - name: TMR-Shortcut
-    buildsystem: simple
-    build-commands:
       - install -Dm755 launch.sh /app/bin/tacticalmathreturns
       - install -Dm644 com.DaRealRoyal.TacticalMathReturns.appdata.xml /app/share/appdata/com.DaRealRoyal.TacticalMathReturns.appdata.xml
       - install -Dm644 com.DaRealRoyal.TacticalMathReturns.desktop /app/share/applications/com.DaRealRoyal.TacticalMathReturns.desktop
       - install -Dm644 com.DaRealRoyal.TacticalMathReturns.png /app/share/icons/hicolor/512x512/apps/com.DaRealRoyal.TacticalMathReturns.png
     sources:
+      - type: archive
+        url: https://github.com/DaRealRoyal/TacticalMathReturns/releases/download/v1.0.1/TacticalMathReturns.tar.xz
+        sha256: 45dc6c32d5e5a75b0cf51ab1ceb68f4a0481a9de67b2ac50c2fbfe9cf2d754e5
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/DaRealRoyal/TacticalMathReturns/releases/latest
+          version-query: .tag_name
+          url-query: .assets[] | select(.name=="TacticalMathReturns.tar.xz") | .browser_download_url
       - type: script
         dest-filename: launch.sh
         commands:

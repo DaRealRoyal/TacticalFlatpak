@@ -37,44 +37,63 @@
 	<url type="bugtracker">https://github.com/DaRealRoyal/TacticalMathReturns/issues</url>
 	<developer_name>Da Real Royal</developer_name>
 	<update_contact>contact@nalsai.de</update_contact>
-  	<content_rating type="oars-1.1" />
+	<content_rating type="oars-1.1"/>
 	<releases>
-		<release version="1.0.1" date="2021-09-21">
+		<release version="v1.1.0" date="2022-10-27">
+			<description>
+				<p>
+					<ul>
+						<li>Updated Unity to 2020.3.40f1</li>
+						<li>Updated Mirror to 66.0.9</li>
+						<li>Updated packages</li>
+						<li>Updated discord rich presence to use discord game sdk</li>
+						<li>Added CI workflow</li>
+						<li>Added saving settings on exiting the settings menu</li>
+						<li>Improved quality settings</li>
+						<li>Optimized sfx</li>
+						<li>Optimized project</li>
+						<li>Fixed vertex compression</li>
+						<li>Fixed teleporter</li>
+					</ul>
+			  </p>
+			</description>
+		</release>
+		<release version="v1.0.1" date="2021-09-21">
 			<description>
 				<p>Just some small updates.</p>
 			</description>
 		</release>
-		<release version="1.0" date="2021-06-25">
+		<release version="v1.0" date="2021-06-25">
 			<description>
 				<p>Hallo, bitte helfen Sie mir! Sie haben gesagt, das wären Release Notes, aber sie halten mich hier gefangen.</p>
 			</description>
 		</release>
-		<release version="0.9.1" date="2021-06-22">
+		<release version="v0.9.1" date="2021-06-22">
 			<description>
 				<p>dXd1IChMb25lbHkgTGFiIHN0aW5rdCk=</p>
 			</description>
 		</release>
-		<release version="0.9" date="2021-06-18">
+		<release version="v0.9" date="2021-06-18">
 			<description>
 				<p>Enter release notes here</p>
 			</description>
 		</release>
-		<release version="0.8" date="2021-06-12">
+		<release version="v0.8" date="2021-06-12">
 			<description>
 				<p>Release notes coming soon™</p>
 			</description>
 		</release>
-		<release version="0.7" date="2021-05-30">
+		<release version="v0.7" date="2021-05-30">
 			<description>
 				<p>never gonna release you notes, never gonna tell you what changed</p>
 			</description>
 		</release>
-		<release version="0.6" date="2021-05-26">
+		<release version="v0.6" date="2021-05-26">
 			<description>
 				<p>Improvements, Updates and Bugfixes</p>
 			</description>
 		</release>
-		<release version="0.5" date="2021-05-23">
+		<release version="v0.5" date="2021-05-23">
 			<description>
 				<p>First release as a Flatpak for Linux!</p>
 			</description>

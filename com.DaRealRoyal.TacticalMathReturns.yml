@@ -24,8 +24,8 @@ modules:
       - install -Dm644 com.DaRealRoyal.TacticalMathReturns.png /app/share/icons/hicolor/512x512/apps/com.DaRealRoyal.TacticalMathReturns.png
     sources:
       - type: archive
-        url: https://github.com/DaRealRoyal/TacticalMathReturns/releases/download/v1.1.0/TacticalMathReturns.tar.xz
-        sha256: 727b590f10dd94f8e6002621c8a278dd205992768df0debaed89671b46949e3f
+        url: https://github.com/DaRealRoyal/TacticalMathReturns/releases/download/v1.1.1/TacticalMathReturns.tar.xz
+        sha256: e2928b534910bfac1790ac0f7c22ccd21441ba96ebc5e725af60ce6d41e0b096
         x-checker-data:
           type: json
           url: https://api.github.com/repos/DaRealRoyal/TacticalMathReturns/releases/latest
@@ -35,7 +35,8 @@ modules:
         dest-filename: launch.sh
         commands:
           - for i in {0..9}; do
-          - test -S "$XDG_RUNTIME_DIR"/discord-ipc-$i || ln -sf "$XDG_RUNTIME_DIR"/app/com.discordapp.Discord/discord-ipc-$i "$XDG_RUNTIME_DIR"/discord-ipc-$i;
+          - test -S "$XDG_RUNTIME_DIR"/discord-ipc-$i || ln -sf "$XDG_RUNTIME_DIR"/app/com.discordapp.Discord/discord-ipc-$i
+            "$XDG_RUNTIME_DIR"/discord-ipc-$i;
           - test -S "$XDG_RUNTIME_DIR"/discord-ipc-$i || ln -sf {app/com.discordapp.Discord,"$XDG_RUNTIME_DIR"}/discord-ipc-$i;
           - test -S "$XDG_RUNTIME_DIR"/discord-ipc-$i || ln -sf {app/com.discordapp.DiscordCanary,"$XDG_RUNTIME_DIR"}/discord-ipc-$i;
           - done

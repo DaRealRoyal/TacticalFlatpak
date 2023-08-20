@@ -15,31 +15,40 @@
 	<launchable type="desktop-id">com.DaRealRoyal.TacticalMathReturns.desktop</launchable>
 	<screenshots>
 		<screenshot type="default">
-			<image type="source">https://tacticalmath.games/images/screenshots/1.jpg</image>
+			<image type="source">https://tmr.nalsai.de/images/screenshots/1.jpg</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">https://tacticalmath.games/images/screenshots/2.jpg</image>
+			<image type="source">https://tmr.nalsai.de/images/screenshots/2.jpg</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">https://tacticalmath.games/images/screenshots/3.jpg</image>
+			<image type="source">https://tmr.nalsai.de/images/screenshots/3.jpg</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">https://tacticalmath.games/images/screenshots/4.jpg</image>
+			<image type="source">https://tmr.nalsai.de/images/screenshots/4.jpg</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">https://tacticalmath.games/images/screenshots/5.jpg</image>
+			<image type="source">https://tmr.nalsai.de/images/screenshots/5.jpg</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">https://tacticalmath.games/images/screenshots/6.jpg</image>
+			<image type="source">https://tmr.nalsai.de/images/screenshots/6.jpg</image>
 		</screenshot>
 	</screenshots>
-	<url type="homepage">https://tacticalmath.games/</url>
+	<url type="homepage">https://tmr.nalsai.de/</url>
 	<url type="bugtracker">https://github.com/DaRealRoyal/TacticalMathReturns/issues</url>
 	<developer_name>Da Real Royal</developer_name>
 	<update_contact>contact@nalsai.de</update_contact>
 	<content_rating type="oars-1.1"/>
 	<releases>
-		<release version="v1.1.1" date="2023-08-20"/>
+		<release version="v1.1.1" date="2023-08-20">
+			<description>
+				<p>
+					<ul>
+						<li>Updated Unity to 2022.3.7f1</li>
+						<li>Updated mirror to 82.1.0</li>
+					</ul>
+			  </p>
+			</description>
+		</release>
 		<release version="v1.1.0" date="2022-10-27">
 			<description>
 				<p>

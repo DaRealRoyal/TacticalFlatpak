@@ -24,8 +24,8 @@ modules:
       - install -Dm644 com.DaRealRoyal.TacticalMathReturns.png /app/share/icons/hicolor/512x512/apps/com.DaRealRoyal.TacticalMathReturns.png
     sources:
       - type: archive
-        url: https://github.com/DaRealRoyal/TacticalMathReturns/releases/download/v1.1.2/TacticalMathReturns.tar.xz
-        sha256: c947ef6a9db2d3aff0c4af1187450f722a9f9928f1b177f7f2b1c5e7a8fe7e79
+        url: https://github.com/DaRealRoyal/TacticalMathReturns/releases/download/v1.1.4/TacticalMathReturns.tar.xz
+        sha256: 169a367a44347b403d31f096037b064ca70c3cfb27fa49dfbe88c4225d4f6b70
         x-checker-data:
           type: json
           url: https://api.github.com/repos/DaRealRoyal/TacticalMathReturns/releases/latest

@@ -18,7 +18,7 @@ jobs:
       - name: Build Flatpak
         uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v6
         with:
-          bundle:  com.DaRealRoyal.TacticalMathReturns.flatpak
+          build-bundle:  false
           manifest-path: com.DaRealRoyal.TacticalMathReturns.yml
           cache-key: flatpak-builder-${{ github.sha }}
           branch: stable
